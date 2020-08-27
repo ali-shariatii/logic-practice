@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>logic practice (flowchart & pseudocode)</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<style>
+body, html {
+  margin: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+pre {
+  overflow-x: scroll;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 40rem;
+}
+</style>
+
+<body>
+
+<h2>logic practice (flowchart & pseudocode)</h2>
+
+<p><b>problem #1: </b>Leslie is on her way to work, and she reeeeally wants an almond milk latte. She’s also doesn’t have a whole lot of 5min extra time, so she makes a plan: she’ll go by her favorite coffee shop, Joe’s, and if they’re too busy, then she’ll swing by her second favorite spot, Mighty Bean. If Mighty bean is too busy, then she’ll just have to suck it up and drink some coffee at the office.</p>
+<p><b>summary: </b>to make an almond latter, but no extra time, then go </p>
+<h4>text</h4>
+<pre>
+  IF leslie has extra time, THEN she makes almond milk latte herself
+  IF lesle does not have 5 min extra time, THEN she goes to joe's for a coffee
+  ELSE IF joe's is busy, she goes to mighty bean for a coffee
+  ELSE mighty bean is busy, she goes to work and drinks a coffee there
+</pre>
+<h4>pseudocode</h4>
+<pre>
+  STORE beverage AS "almond milk coffee";
+  STORE coffeePlace AS "house" OR "joe's" OR "mighty beans" OR "office";
+  STORE extraTime AS number;
+
+  START
+
+  IF extraTime >= 5min
+    OUTPUT make beverage in the "house";
+  ELSE  
+    IF "joe's" is not too busy
+      OUTPUT get beverage from the "joe's";
+    ELSE  
+      IF "mighty beans" is not too busy
+        OUTPUT get beverage from the "mighty beans";
+      ELSE
+        OUTPUT make beverage at the "office"
+
+  STOP
+</pre>
+<h4>flow-chart</h4>
+<figure>
+  <img src="img/coffee-place-problem.png" alt="">
+</figure><br>
+<hr>
+  
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

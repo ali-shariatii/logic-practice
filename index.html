@@ -85,7 +85,75 @@ img {
   <img src="img/coffee-place-problem.png" alt="">
 </figure><br>
 <hr>
-  
+
+<p><b>problem #2: </b>create a pseudocode for the below flow-chart.</p>
+<h4>flow-chart</h4>
+<figure>
+  <img src="img/grandma-tea-flowchart.png" alt="">
+</figure><br>
+<h4>pseudocode</h4>
+<pre>
+STORE timeOfDay AS time of the day it is;
+STORE grandmasTea AS string;
+
+START
+
+IF grandma ask for a cup of tea
+INPUT timeOfDay
+	IF timeOfDay < 12
+		grandmasTea = "Jasmine Pearl tea with honey";
+		MAKE grandmasTea;
+		OUTPUT grandmasTea
+	ELSE IF timeOfDay >= 12 OR timeOfDay < 16
+		grandmasTea = "English breakfast tea with milk";
+		MAKE grandmasTea;
+		OUTPUT grandmasTea
+	ELSE
+		grandmasTea = "spearmint tea in her evening teacup";
+		MAKE grandmasTea;
+		OUTPUT grandmasTea
+STOP
+</pre><br>
+<hr>
+
+<p><b>problem #3: </b>create a clock which tells the time depending on the time period of the day the visitor visits the website and in a specific background image for each time period</p>
+<h4>pseudocode</h4>
+<pre>
+STORE timeOfDay AS time of the day it is;
+STORE backgroundImage AS background image;
+STORE message AS string;
+
+START
+
+ONLOAD page
+  INPUT timeOfDay
+  IF timeOfDay NOT VALIDATED
+    message = "I cannot validate the time, but good day anyway!";
+    OUTPUT message
+  ELSE
+    IF timeOfDay < 12
+      backgroundImage = image#1;
+      message = "Good morning!"
+      OUTPUT backgroundImage;
+      OUTPUT message
+    ELSE IF timeOfDay >= 12 OR timeOfDay < 16
+      backgroundImage = image#2;
+      message = "Good afternoon!"
+      OUTPUT backgroundImage;
+      OUTPUT message
+    ELSE
+      backgroundImage = image#3;
+      message = "Good day!"
+      OUTPUT backgroundImage;
+      OUTPUT message
+
+STOP
+</pre>
+<h4>flow-chart</h4>
+<figure>
+  <img src="img/lolcat-clock-flowchart.png" alt="">
+</figure><br><br>
+<hr>
 
 
 
